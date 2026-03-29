@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JP | Web Coder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="top">
+    <div class="header__inner">
+      <a href="#top" class="header__logo">JP <span class="header__logo-sub">Web Coder</span></a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="#works">Works</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <nav class="header__mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="#works" class="mobile-link">Works</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="hero__bg-text" aria-hidden="true">CODE</div>
+      <div class="hero__content">
+        <p class="hero__label">Web Coder</p>
+        <h1 class="hero__title">
+          Code that brings<br />
+          design to <em>life.</em>
+        </h1>
+        <p class="hero__desc">
+          はじめまして、JPです。Webサイトのコーディングを専門に、<br />
+          お客様のイメージをきれいなコードで形にするお手伝いをしています。
+        </p>
+        <a href="#works" class="btn btn--outline">View Works</a>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-label">SCROLL</span>
+      </div>
+    </section>
+
+    <!-- ========== WORKS ========== -->
+    <section class="works section" id="works">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-head__label">Works</span>
+          <h2 class="section-head__title">制作サンプル</h2>
+        </div>
+
+        <div class="works__grid">
+
+          <!-- Card 1 -->
+          <article class="work-card">
+            <div class="work-card__img work-card__img--photo">
+              <img src="images/site1.png" alt="The World of My Guitar Gear" class="work-card__photo" />
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">Personal Site</span>
+              <h3 class="work-card__title">The World of My Guitar Gear</h3>
+              <p class="work-card__desc">
+                ギター・エフェクターを紹介する個人サイト。HTML / CSS / jQuery を使い、スマホ・PC両対応のレスポンシブサイトを制作しました。
+              </p>
+              <div class="work-card__tech">
+                <span>HTML</span><span>CSS</span><span>jQuery</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="work-card">
+            <div class="work-card__img work-card__img--photo">
+              <img src="images/site2.png" alt="minori" class="work-card__photo" />
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">Restaurant Site</span>
+              <h3 class="work-card__title">minori</h3>
+              <p class="work-card__desc">
+                湘南・七里ヶ浜を舞台にした架空のカフェダイニングバーのコーポレートサイト。トップページ・メニューページの2ページ構成で、ハンバーガーメニューを実装しました。
+              </p>
+              <div class="work-card__tech">
+                <span>HTML</span><span>CSS</span><span>jQuery</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="work-card">
+            <div class="work-card__img work-card__img--salon">
+              <div class="work-card__img-inner">
+                <div class="mock-browser">
+                  <div class="mock-browser__bar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="mock-browser__screen salon-mock">
+                    <p class="mock-site-name">HAIR ATELIER NOA</p>
+                    <p class="mock-tagline">BEAUTY &amp; STYLE</p>
+                    <div class="mock-line"></div>
+                    <div class="mock-line mock-line--short"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">Sample Work</span>
+              <h3 class="work-card__title">HAIR ATELIER NOA（制作サンプル）</h3>
+              <p class="work-card__desc">
+                架空の美容院を題材にした制作サンプルです。モノトーンを基調にした洗練されたデザインを意識してコーディングしました。
+              </p>
+              <div class="work-card__tech">
+                <span>HTML</span><span>CSS</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-head section-head--light">
+          <span class="section-head__label">Skills</span>
+          <h2 class="section-head__title">スキル</h2>
+        </div>
+
+        <div class="skills__grid">
+          <div class="skill-item">
+            <div class="skill-item__icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="4" y="4" width="32" height="32" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M10 14l3 12 7-9 7 9 3-12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-item__name">HTML</h3>
+            <p class="skill-item__desc">セマンティックなマークアップとアクセシビリティを意識した構造設計</p>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="--pct:90%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-item__icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="4" y="4" width="32" height="32" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 12l2 16 6-2 6 2 2-16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-item__name">CSS / Sass</h3>
+            <p class="skill-item__desc">Flexbox・Grid・アニメーションを駆使したレスポンシブデザイン</p>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="--pct:88%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-item__icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M14 17l6 3-6 3V17z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M20 20h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-item__name">JavaScript</h3>
+            <p class="skill-item__desc">インタラクティブなUIとスムーズなアニメーション実装</p>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="--pct:70%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-item__icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M8 8h24v6H8zM8 18h16v6H8zM8 28h10v6H8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-item__name">WordPress</h3>
+            <p class="skill-item__desc">オリジナルテーマ制作とブロックエディタカスタマイズ</p>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="--pct:75%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-item__icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="6" y="6" width="28" height="28" rx="14" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M20 14v12M14 20h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-item__name">Figma</h3>
+            <p class="skill-item__desc">デザインカンプ作成からプロトタイプ、デザインシステム構築まで</p>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="--pct:80%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-item__icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M8 32L20 8l12 24H8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M13 24h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-item__name">Shopify</h3>
+            <p class="skill-item__desc">Liquidテンプレートを使ったオリジナルECサイト制作</p>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="--pct:65%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact section" id="contact">
+      <div class="container container--narrow">
+        <div class="section-head">
+          <span class="section-head__label">Contact</span>
+          <h2 class="section-head__title">お問い合わせ</h2>
+        </div>
+        <p class="contact__lead">
+          制作のご依頼・ご相談はお気軽にどうぞ。<br />
+          2営業日以内にご返信いたします。
+        </p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label class="form-label" for="name">お名前 <span class="required">*</span></label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="山田 太郎" required />
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="email">メールアドレス <span class="required">*</span></label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="example@email.com" required />
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="subject">件名</label>
+            <input class="form-input" type="text" id="subject" name="subject" placeholder="Webサイト制作のご依頼" />
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="message">メッセージ <span class="required">*</span></label>
+            <textarea class="form-textarea" id="message" name="message" rows="6" placeholder="ご依頼内容やご質問をご記入ください。" required></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn--fill">送信する</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__logo">JP <span class="footer__logo-sub">Web Coder</span></p>
+      <nav class="footer__nav">
+        <a href="#works">Works</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer__copy">&copy; 2026 JP Web Coder</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('is-open');
+      mobileNav.classList.toggle('is-open');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('is-open');
+        mobileNav.classList.remove('is-open');
+      });
+    });
+
+    // Skill bar animation on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.skill-item').forEach(el => observer.observe(el));
+    document.querySelectorAll('.work-card').forEach(el => observer.observe(el));
+
+    // Sticky header — switch when hero section leaves viewport
+    const header = document.querySelector('.header');
+    const heroSection = document.querySelector('.hero');
+    const headerObserver = new IntersectionObserver((entries) => {
+      header.classList.toggle('is-scrolled', !entries[0].isIntersecting);
+    }, { threshold: 0.05 });
+    headerObserver.observe(heroSection);
+
+    // Contact form (demo)
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = e.target.querySelector('[type=submit]');
+      btn.textContent = '送信しました';
+      btn.disabled = true;
+      btn.style.opacity = '0.6';
+    });
+  </script>
+</body>
+</html>
