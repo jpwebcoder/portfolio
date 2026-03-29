@@ -211,8 +211,7 @@
           2営業日以内にご返信いたします。
         </p>
 
-        <form class="contact-form" action="https://formspree.io/f/xkopjznk" method="POST">
-          <input type="hidden" name="_next" value="https://jpwebcoder.github.io/portfolio/">
+        <form class="contact-form" id="contactForm">
           <div class="form-row">
             <label class="form-label" for="name">お名前 <span class="required">*</span></label>
             <input class="form-input" type="text" id="name" name="name" placeholder="山田 太郎" required />
@@ -285,6 +284,32 @@
       header.classList.toggle('is-scrolled', !entries[0].isIntersecting);
     }, { threshold: 0.05 });
     headerObserver.observe(heroSection);
+
+    // Contact form — fetch送信
+    document.getElementById('contactForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('[type=submit]');
+      btn.textContent = '送信中...';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch('https://formspree.io/f/xkopjznk', {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          window.location.href = 'https://jpwebcoder.github.io/portfolio/';
+        } else {
+          btn.textContent = '送信に失敗しました。再度お試しください。';
+          btn.disabled = false;
+        }
+      } catch {
+        btn.textContent = '送信に失敗しました。再度お試しください。';
+        btn.disabled = false;
+      }
+    });
 
   </script>
 </body>
