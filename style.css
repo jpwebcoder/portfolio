@@ -637,7 +637,7 @@ ul { list-style: none; }
 
 .skills__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
 }
 
@@ -855,7 +855,6 @@ ul { list-style: none; }
    ============================================================ */
 @media (max-width: 900px) {
   .works__grid  { grid-template-columns: 1fr; gap: 1.25rem; }
-  .skills__grid { grid-template-columns: repeat(2, 1fr); }
 
   .header__nav       { display: none; }
   .header__hamburger { display: flex; }
