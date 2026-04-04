@@ -444,7 +444,7 @@ ul { list-style: none; }
 
 .works__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.75rem;
 }
 
@@ -467,6 +467,7 @@ ul { list-style: none; }
 
 .work-card:nth-child(2) { transition-delay: 0.1s; }
 .work-card:nth-child(3) { transition-delay: 0.2s; }
+.work-card:nth-child(4) { transition-delay: 0.3s; }
 
 .work-card:hover {
   transform: translateY(-5px);
@@ -876,7 +877,6 @@ ul { list-style: none; }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 900px) {
-  .works__grid  { grid-template-columns: 1fr; gap: 1.25rem; }
   .skills__grid { grid-template-columns: repeat(2, 1fr); }
 
   .header__nav       { display: none; }
@@ -898,6 +898,7 @@ ul { list-style: none; }
 }
 
 @media (max-width: 600px) {
+  .works__grid  { grid-template-columns: 1fr; gap: 1.25rem; }
   .skills__grid { grid-template-columns: 1fr; }
   .hero__title  { line-height: 1.12; }
   .footer__nav  { flex-wrap: wrap; gap: 1rem; }
